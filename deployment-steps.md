@@ -1,18 +1,18 @@
-\# AWS EC2 Node.js Deployment Steps
+# AWS EC2 Node.js Deployment Steps
 
 
 
-\## 1. Launch EC2 Instance
+## 1. Launch EC2 Instance
 
-\- Go to AWS EC2 console
+- Go to AWS EC2 console
 
-\- Launch Ubuntu Server 22.04
+- Launch Ubuntu Server 22.04
 
-\- Instance type: t3.micro (Free tier)
+- Instance type: t3.micro (Free tier)
 
 
 
-\## 2. Configure Security Group
+## 2. Configure Security Group
 
 Allow:
 
@@ -24,7 +24,7 @@ Custom TCP - Port 3000
 
 
 
-\## 3. Connect to EC2
+## 3. Connect to EC2
 
 
 
@@ -32,7 +32,7 @@ ssh -i nodejs-key.pem ubuntu@your-ip
 
 
 
-\## 4. Install Node.js
+## 4. Install Node.js
 
 
 
@@ -42,7 +42,7 @@ sudo apt install nodejs npm -y
 
 
 
-\## 5. Create Application
+## 5. Create Application
 
 
 
@@ -68,7 +68,7 @@ http.createServer((req,res)=>{
 
 
 
-\## 6. Run App
+## 6. Run App
 
 
 
@@ -76,7 +76,7 @@ node app.js
 
 
 
-\## 7. Access in Browser
+## 7. Access in Browser
 
 
 
